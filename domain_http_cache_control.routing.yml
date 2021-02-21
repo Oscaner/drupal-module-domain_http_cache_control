@@ -1,0 +1,57 @@
+entity.domain_http_cache_control.collection:
+  path: '/admin/config/development/performance/domain-http-cache'
+  defaults:
+    _entity_list: 'domain_http_cache_control'
+    _title: 'Domain http cache control'
+  requirements:
+    _permission: 'administer domain http cache control'
+  options:
+    _admin_route: TRUE
+
+entity.domain_http_cache_control.form_add:
+  path: '/admin/config/development/performance/domain-http-cache/add'
+  defaults:
+    _entity_form: 'domain_http_cache_control.add'
+    _title: 'Add new domain http cache control'
+  requirements:
+    _permission: 'administer domain http cache control'
+  options:
+    _admin_route: TRUE
+
+entity.domain_http_cache_control.edit_form:
+  path: '/admin/config/development/performance/domain-http-cache/manage/{domain_http_cache_control}/edit'
+  defaults:
+    _entity_form: 'domain_http_cache_control.edit'
+    _title: 'Edit domain http cache control'
+  requirements:
+    _permission: 'administer domain http cache control'
+  options:
+    _admin_route: TRUE
+
+entity.domain_http_cache_control.delete_form:
+  path: '/admin/config/development/performance/domain-http-cache/manage/{domain_http_cache_control}/delete'
+  defaults:
+    _entity_form: 'domain_http_cache_control.delete'
+    _title: 'Delete'
+  requirements:
+    _permission: 'administer domain http cache control'
+  options:
+    _admin_route: TRUE
+
+entity.domain_http_cache_control.enable:
+  path: '/admin/config/development/performance/domain-http-cache/manage/{domain_http_cache_control}/enable'
+  defaults:
+    _controller: '\Drupal\domain_http_cache_control\Controller\DomainHttpCacheController::enableEntity'
+  requirements:
+    _permission: 'administer domain http cache control'
+  options:
+    _admin_route: TRUE
+
+entity.domain_http_cache_control.disable:
+  path: '/admin/config/development/performance/domain-http-cache/manage/{domain_http_cache_control}/disable'
+  defaults:
+    _controller: '\Drupal\domain_http_cache_control\Controller\DomainHttpCacheController::disableEntity'
+  requirements:
+    _permission: 'administer domain http cache control'
+  options:
+    _admin_route: TRUE

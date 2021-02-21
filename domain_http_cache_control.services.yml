@@ -1,0 +1,9 @@
+services:
+  domain_http_cache_control.manager:
+    class: Drupal\domain_http_cache_control\DomainHttpCacheControlManager
+    arguments: ['@entity_type.manager']
+  domain_http_cache_control.event_subscriber:
+    class: Drupal\domain_http_cache_control\EventSubscriber\DomainHttpCacheControlEventSubscriber
+    arguments: ['@domain_http_cache_control.manager', '@module_handler', '@config.factory', '@entity_type.manager']
+    tags:
+      - { name: event_subscriber }

@@ -1,0 +1,4 @@
+domain_http_cache_control.collection:
+  title: 'Domain'
+  route_name: entity.domain_http_cache_control.collection
+  base_route: system.performance_settings

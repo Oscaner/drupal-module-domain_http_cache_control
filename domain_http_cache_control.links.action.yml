@@ -1,0 +1,5 @@
+entity.domain_http_cache_control.form_add:
+  route_name: entity.domain_http_cache_control.form_add
+  title: 'Add domain pattern'
+  appears_on:
+    - entity.domain_http_cache_control.collection

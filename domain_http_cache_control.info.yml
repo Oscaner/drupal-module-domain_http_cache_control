@@ -1,0 +1,8 @@
+name: 'Domain Http Cache Control'
+type: module
+description: 'Module for implementing cache control by domain level'
+package: performance
+core: 8.x
+dependencies:
+  - http_cache_control:http_cache_control
+core_incompatible: false

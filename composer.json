@@ -1,0 +1,14 @@
+{
+    "name": "drupal/domain_http_cache_control",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "Kang Miao",
+            "email": "kang@ciandt.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "drupal/http_cache_control": "^1.0"
+    }
+}

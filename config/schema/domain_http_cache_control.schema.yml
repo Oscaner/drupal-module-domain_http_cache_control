@@ -1,0 +1,43 @@
+domain_http_cache_control.domain_http_cache_control.*:
+  type: config_entity
+  label: 'Domain http cache control'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    weight:
+      type: integer
+      label: 'Weight'
+    domain_pattern:
+      type: string
+      label: 'Domain Pattern'
+    cache:
+      type: mapping
+      label: 'Caching'
+      mapping:
+        page:
+          type: mapping
+          label: 'Page caching'
+          mapping:
+            page_cache_maximum_age:
+              type: integer
+              label: 'Max age'
+        http:
+          type: mapping
+          label: 'Http caching'
+          mapping:
+            http_max_age:
+              type: integer
+              label: 'Http max age'
+            404_max_age:
+              type: integer
+              label: '404 max age'
+            302_max_age:
+              type: integer
+              label: '302 max age'
+            301_max_age:
+              type: integer
+              label: '301 max age'
+            5xx_max_age:
+              type: integer
+              label: '5xx max age'
